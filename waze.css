@@ -1,0 +1,254 @@
+*{
+    box-sizing: border-box;
+}
+
+ul{
+    background-color: white;
+    
+    list-style-type: none;
+    margin-left: 65px;
+    margin-right: 60px;
+    top: 0;
+    padding: 5px 7px;
+    
+    overflow: hidden;
+}
+li a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-weight:100;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    padding: 15px 16px;
+    font-weight: bold;
+}
+li{
+    float: left;
+}
+span li{
+    float: right;
+}
+li a:hover{
+    color: #3cf;
+}
+li a.ride:hover{
+   border-color: #3cf;
+}
+#click:checked ~ nav{
+    display: block;
+}
+
+.div1{
+   background-color:  #3cf;
+   border-radius: 10px;
+   width: 725px;
+   height: 450px;
+   margin-left: 25px;
+   display: inline-block;
+   
+}
+
+
+.div2{
+   background-color: #1ee592;
+   border-radius: 10px;
+   width: 520px;
+   height: 835px;
+   margin-right: 25px;
+   float: right;
+}
+.div0{
+    display: none;
+    background-color:  #1ee592;
+    border-radius: 10px;
+    width: 725px;
+    height: 450px;
+    margin-left: 25px;
+}
+.div3{
+    background-color: rgb(231, 231, 100);
+    border-radius: 10px;
+    width: 725px;
+    height: 350px;
+    margin-left: 25px;
+    display: inline-block;
+    margin-top: 35px;
+}
+.div4{
+    background-color: #963eff;
+    border-radius: 10px;
+    width:auto;
+    height:420px;
+    margin-left: 25px;
+    margin-top: 35px;
+    margin-right: 25px;
+}
+
+span.download {
+background-color: white;
+border-radius: 144px;
+padding: 1em 2.5em;
+}
+span.learn {
+font-family: sans-serif;
+margin: 10px;
+font-size: 200;
+}
+p {
+font-family: sans-serif;
+font-size: 25px;
+font-weight: 100;
+}
+.first {
+font-family: verdana;
+padding: 20px 50px;
+font-weight: bold;
+} 
+.ride{    
+     border: 2px solid black;
+    border-radius: 140px;
+    padding: 8px 10px;
+    margin-top: 6px;
+}
+h2.head1 {
+font-size: 30px;
+}
+h2.head {
+font-size: 45px;
+}
+.logo,input{
+    display: none;
+}
+ nav .menu-btn i{
+    display: none;
+}
+
+#click2,.cross,i{
+
+    display: none;
+}
+@media only screen and (max-width: 900px){
+
+
+    
+    
+    .div1{
+        margin: 20px 20px 30px;
+        width: auto;
+        height: 500px;
+        display: block;
+       
+        
+        
+        
+    }
+    .div2{
+        display: none;
+    }
+    .div0{
+        margin: 20px 20px 30px;
+        width: auto;
+        height: 500px;
+        display: block;
+       
+        
+    }
+    .div3{
+        margin: 20px 20px;
+        margin-top: 30px;
+        width: auto;
+        height: 400px;
+        display: block;
+        
+    }
+    .div4{
+        margin: 20px 20px;
+        margin-top: 30px;
+        width: auto;
+        height: 500px;
+        display: block;
+    }
+    
+    nav { 
+       background-color:white;
+       padding: 10px 12px;
+       top: 0;
+       margin: 20px 20px;
+
+    }
+    .logo{
+        font-family: verdana,sans-serif;
+        font-weight: bold;
+    }
+    nav input{
+        float: right;
+        
+    }
+    nav i{
+     float: right;
+     
+    }
+    
+    
+    nav ul{
+        position: fixed;
+        height: 100%;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: #3cf;
+        display: none;
+        
+    }
+    nav ul .cross-btn i{
+        float: right;
+        margin-right: 45px;
+        margin-top: 20px;
+        display: initial;
+        cursor: pointer;
+        
+    }
+    ul li a{
+      font-size: 25px;
+    }
+    li a:hover{
+        color: black;
+    }
+    li {
+       float: none;
+    }
+    span li {
+        float: none;
+    }
+    .ride{
+        border: none;
+    }
+    
+    .logo {
+        display: initial;
+    }
+    nav .menu-btn i {
+        display: initial;
+    }
+
+    #click:checked ~ ul{
+        display: initial;
+    }
+
+    .cross,i{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+    
+    #click2{  
+        margin-right: 20px;
+        margin-top: 20px;
+        
+    }
+    #click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+      }
+}
